@@ -3,7 +3,7 @@ function notif(title, body){
 
         var myNotif = new Notification(title, {
             'body': body,
-            'icon': './resources/red.png'
+            'icon': '../resources/red.png'
         });
     });
 }

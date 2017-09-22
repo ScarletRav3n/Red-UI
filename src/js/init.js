@@ -1,10 +1,10 @@
 var title = document.getElementById('title').innerHTML;
 document.getElementById('titleShown').innerHTML = title;
-package = require('././package.json');
+package = require('../package.json');
 
 var theme = package.Theme;
 
-const settings = require(`./src/themes/${theme}.json`);
+const settings = require(`../src/themes/${theme}.json`);
 
 var body = document.body.style;
 var nav = document.getElementById('nav').style;
@@ -39,7 +39,8 @@ var styles = `
     }
 </style>`;
 
-document.getElementById('head').innerHTML += styles;
+// document.getElementById('head').innerHTML += styles;
+//doesn't work idk
 
 body.backgroundColor = settings.Background;
 body.color = settings.TextColor;

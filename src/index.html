@@ -1,0 +1,13 @@
+<script>
+	const template = require('./template.js');
+	var title = "Red UI";
+	var head = '<link href="css/bootstrapper.css" rel="stylesheet">';
+	var body = `
+        <div class="center width-80 height-100 arial">
+            <h1>Hello</h1>
+            <button type="button" id="button" onclick="notif('Hey Listen', 'Ah nevermind.')">Ping!</button>
+
+        </div>
+    `;
+	template.createPage(title,head,body);
+</script>

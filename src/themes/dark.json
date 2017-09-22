@@ -1,13 +1,13 @@
 {
   "Background":"#363636" ,
   "TextColor":"#f7f7f7",
-  "navBackground":"#363636",
+  "navBackground":"#333333",
   "Toggler": {
     "Background": "#292929",
     "Minimize": {
       "Background": {
         "Static":"#292929",
-        "Hover":"#363636"
+        "Hover":"#333333"
       },
       "Color": {
         "Static":"#f7f7f7",
@@ -17,7 +17,7 @@
     "Maximize": {
       "Background": {
         "Static":"#292929",
-        "Hover":"#363636"
+        "Hover":"#333333"
       },
       "Color": {
         "Static":"#f7f7f7",

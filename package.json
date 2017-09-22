@@ -1,7 +1,7 @@
 {
   "name": "red-ui",
   "version": "0.1.0",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "start": "electron ."
   },
@@ -11,5 +11,5 @@
     "electron": "^1.6.2",
     "jquery": "^3.2.1"
   },
-  "Theme":"zero"
+  "Theme": "dark"
 }

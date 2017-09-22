@@ -1,16 +1,19 @@
+var createPage = function(title, head, body){
+
+	var page = `
 <!doctype html>
 <html lang="en">
 <head id="head">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="src/css/reset.css" rel="stylesheet">
-    <link href="src/css/menu.css" rel="stylesheet">
-	<link href="src/css/main.css" rel="stylesheet">
-    <title id="title">Red UI</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    ${head}
+    <title id="title">${title}</title>
 </head>
-<body>
+<body id="body">
     <div id="container">
         <nav id="nav">
             <div id="titleShown">
@@ -27,13 +30,18 @@
                 </div>
             </div>
         </nav>
-		<main>
-			<h1>Oh heyo</h1>
-			<button type="button" id="button" onclick="notif('Hey Listen', 'Ah nevermind.')">Ping!</button>
-			<script src="src/js/notif.js"></script>
-		</main>
+        <main>
+            ${body}
+        </main>
     </div>
-	<script src="src/js/init.js"></script>
-	<script src="src/js/menuHandler.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/notif.js"></script>
+	<script src="js/menuHandler.js"> </script>
 </body>
 </html>
+    `;
+
+	document.write(page);
+};
+
+module.exports.createPage = createPage;
