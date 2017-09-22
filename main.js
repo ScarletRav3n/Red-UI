@@ -10,7 +10,7 @@ function createWindow () {
   win = new BrowserWindow({
       frame: false,
       width: 300,
-      height: 150,
+      height: 200,
       icon:'resources/red.png'
   });
 
