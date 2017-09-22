@@ -1,12 +1,57 @@
 <script>
 	const template = require('./template.js');
 	var title = "Red UI";
-	var head = '<link href="css/bootstrapper.css" rel="stylesheet">';
+	var head = '<link href="css/bootstrapper.css" rel="stylesheet">' +
+		'<link href="css/index.css" rel="stylesheet">';
 	var body = `
         <div class="center width-80 height-100 arial">
-            <h1>Hello</h1>
-            <button type="button" id="button" onclick="notif('Hey Listen', 'Ah nevermind.')">Ping!</button>
+			<div id="botname">
+			<h1>Red#6421</h1>
+			</div>
+			<div id="profile">
+			<img src="../resources/profile.png">
+			<table>
+				<tr>
+					<th>Status:</th>
+					<td style="color:red">Offline</td>
+				</tr>
+				<tr>
+					<th>Playing:</th>
+					<td>with ur heart</td>
+				</tr>
+				<tr>
+					<th>Stream:</th>
+					<td>None</td>
+				</tr>
+			</table>
+			</div>
+			<div id="misc">
+			<button type="button" id="button" onclick="notif('Hey Listen', 'Ah nevermind.')">Ping!</button>
+			</div>
+			<div id="stats">
+				<table style="width:100%">
+					<caption>STATS</caption>
+					<tr>
+						<th>Owner:</th>
+						<td>Scarlet</td>
+						<th>Servers:</th>
+						<td>85</td>
+					</tr>
+					<tr>
+						<th>Uptime:</th>
+						<td>3 hrs</td>
+						<th>Channels:</th>
+						<td>3,848</td>
 
+					</tr>
+					<tr>
+						<th></th>
+						<td></td>
+						<th>Members:</th>
+						<td>16,879</td>
+					</tr>
+				</table>
+			</div>
         </div>
     `;
 	template.createPage(title,head,body);

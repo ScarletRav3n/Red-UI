@@ -10,10 +10,11 @@ function createWindow () {
 
   win = new BrowserWindow({
       frame: false,
-	  height: 200,
-	  width: 350,
-	  minHeight: 150,
+	  height: 450,
+	  width: 325,
+	  minHeight: 400,
 	  minWidth: 300,
+	  backgroundColor: '#333333',
       icon:'resources/red.png'
   });
 
@@ -43,10 +44,10 @@ function createWindow () {
     slashes: true
   }));
 
-  win.on('minimize', function(event){
-	 event.preventDefault()
-	 	win.hide();
-  });
+  // win.on('minimize', function(event){
+	//  event.preventDefault()
+	//  	win.hide();
+  // });
 
   win.on('closed', () => {
     win = null

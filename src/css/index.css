@@ -1,0 +1,36 @@
+#botname{
+    font-size: large;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: block;
+    margin: 10px 20px 10px 40px;
+}
+#profile{
+    float: right;
+    margin: 0 20px 10px 0;
+}
+#profile img{
+    border-radius: 50px;
+}
+#misc{
+    float: left;
+    margin: 50px 10px 10px 40px;
+}
+#stats{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin: 0 0 20px 0;
+}
+table, th, td {
+    text-align: left;
+    font-size: small;
+}
+caption{
+    padding: 0;
+    text-align: center;
+}
+td{
+    font-style: italic;
+    padding: 10px 20px 0 5px;
+}
