@@ -1,13 +1,39 @@
-<!doc html>
-<html>
-<head>
-    <title>
-        Apperature
-    </title>
-    <body>
-        <h1>ARghhh</h1>
-        <button type="button" name="button" onclick="doNotify()">Ping!</button>
-        <script src="app.js"></script>
-    </body>
+<!doctype html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="src/css/reset.css" rel="stylesheet">
+    <link href="src/css/menu.css" rel="stylesheet">
+	<link href="src/css/main.css" rel="stylesheet">
+    <title id="title">Red UI</title>
 </head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="titleShown">
+            </div>
+            <div id="togglers">
+                <div id="minimize">
+                    <span>-</span>
+                </div>
+                <div id="maximize">
+                    <span>&#9634</span>
+                </div>
+                <div id="close">
+                    <span>&times;</span>
+                </div>
+            </div>
+        </nav>
+		<main>
+			<h1>Oh heyo</h1>
+			<button type="button" id="button" onclick="notif('Hey Listen', 'Ah nevermind.')">Ping!</button>
+			<script src="src/js/notif.js"></script>
+		</main>
+    </div>
+	<script src="src/js/init.js"></script>
+	<script src="src/js/menuHandler.js"></script>
+</body>
 </html>
